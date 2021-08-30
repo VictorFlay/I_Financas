@@ -1,0 +1,21 @@
+<ion-content class="ion-padding>">
+  <div id="logo-div">
+    <ion-text color="medium">
+      <img src="../../../assets/if_logo.png">
+      <h3>IFinanças</h3>
+    </ion-text>
+  </div>
+  
+  <ion-item>
+    <ion-icon name="mail" color="if" slot="start"></ion-icon>
+    <ion-input [(ngModel)]="email" type="email" placeholder="E-mail" autofocus="true"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-icon name="lock-closed" color="if" slot="start"></ion-icon>
+    <ion-input [(ngModel)]="password" type="password" placeholder="Senha"></ion-input>
+  </ion-item><br><br>
+
+  <ion-button (click)="validate()" expand="block" color="if" fill="clear">Enviar</ion-button>
+
+</ion-content>
